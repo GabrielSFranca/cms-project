@@ -34,3 +34,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+src/
+├── app/
+├── components/
+├── features/
+├── lib/
+├── models/
+├── services/
+├── types/
+└── styles/
+
+
+O que vai em cada pasta
+
+app/
+Aqui ficam as rotas, páginas e layout do Next.js. No seu MVP, isso cobre coisas como login, cadastro, perfil, feed, criação de publicação e leitura de post. O documento lista essas páginas principais no escopo do projeto.
+
+components/
+Componentes reutilizáveis da interface, como botão, input, header, cards de post, avatar, navbar e pequenos blocos do editor.
+
+features/
+Cada funcionalidade principal pode ficar isolada aqui. Por exemplo: auth, profile, posts, editor, feed, comments. Isso combina com a orientação do documento de tratar o MVP como uma sequência de “features verticais”.
+
+lib/
+Funções auxiliares e infraestrutura, como conexão com MongoDB, utilitários de sessão, hash de senha e helpers gerais.
+
+models/
+Modelos do Mongoose, como User e depois Post. O documento coloca User Model na fase 2 e Post Model na fase 3.
+
+services/
+Regras de negócio e operações sobre os dados: criar usuário, autenticar, salvar publicação, buscar posts, curtir, comentar.
+
+types/
+Tipos e interfaces do TypeScript, como User, Post, Block, Comment e tipos de formulário.
+
+styles/
+Estilos globais, tokens visuais e arquivos de CSS Modules, se você optar por essa abordagem.
